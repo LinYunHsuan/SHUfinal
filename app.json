@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "scripts": {
+  },
+  "env": {
+    "NODE_ENV": {
+      "required": true
+    },
+    "PROD_MONGODB": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
