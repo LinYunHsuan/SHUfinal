@@ -1,13 +1,10 @@
 var express = require('express'); //Express 是最小又靈活的 Node.js Web 應用程式架構
 var app = express();
-var http = require('http');
 var mongo = require('mongodb');
 var MongoClient = require('mongodb').MongoClient; 
 var mqtt = require('mqtt'); //is a client library for the MQTT protocol.
 var mongoUrl = 'mongodb://yizhen:jenny0728@ds151180.mlab.com:51180/dbtest';
 var bodyParser = require('body-parser');
-var request = require('request');
-var queryString = require('query-string');
 var mqttDB = require('./mqttDB.js')
 var split = require('split-string');
 
